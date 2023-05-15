@@ -1,0 +1,45 @@
+//Programa para controle de estoque
+
+var produtos = ["1l Leite", "Lata de milho", "1k Arroz", "1kg trigo", "2l refrigerante",]
+
+var precos = [5, 1.5, 2, 4, 6]
+
+var qtProdutos = [200, 300, 200, 100, 250]
+
+var nomeProduto, precoProduto, qtProduto
+
+
+//Operação de reposição ou atualização de cadastro.
+
+//Assumimos que o código do produto é o índice.
+var codProduto = -1
+while (codProduto < 0 || codProduto >= produtos.length) {
+  codProduto = Number(prompt("Digite o código do produto que deseja atualizar:"))
+}
+
+//Atualiza o nome do produto quando necessário:
+nomeProduto = prompt("Digite o novo nome do produto se deseja alterá-lo, caso contrário tecle enter:")
+
+if (nomeProduto !== "") {
+  produtos[codProduto] = nomeProduto
+}
+
+//Atualiza o nome do produto quando necessário:
+precoProduto = prompt("Digite o novo preço do produto se deseja alterá-lo, caso contrário tecle enter:")
+
+if (precoProduto !== "") {
+  precos[codProduto] = Number(precoProduto)
+}
+
+//Atualiza a quantidade do produto quando necessário:
+qtProduto = prompt("Digite a nova quantidade do produto se deseja alterá-lo, caso contrário tecle enter:")
+
+if (qtProduto !== "") {
+  qtProdutos[codProduto] = Number(qtProduto)
+}
+
+
+
+console.log(produtos + "\n")
+console.log(precos + "\n")
+console.log(qtProdutos + "\n")
