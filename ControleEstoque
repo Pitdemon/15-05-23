@@ -2,7 +2,7 @@
 
 var produtos = ["1l Leite", "Lata de milho", "1k Arroz", "1kg trigo", "2l refrigerante",]
 
-var precos = [5, 1.5, 2, 4, 6]
+var precos =   [5, 1.5, 2, 4, 6]
 
 var qtProdutos = [200, 300, 200, 100, 250]
 
